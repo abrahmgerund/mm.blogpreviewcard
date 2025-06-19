@@ -1,0 +1,99 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    width: auto;
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
+    font-family: 'Figtree', sans-serif;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 7px 7px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding: 18px;
+    border: 1px solid black;
+}
+
+.card .illustration {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .learning {
+    background: hsl(47, 88%, 63%);
+    width: 4rem;
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 25px;
+    font-weight: 800;
+    /* font-size: 0.8rem; */
+    font-size: clamp(0.4rem, 1vw + 0.5rem, 0.8rem);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.card .published {
+    color: hsl(0, 0%, 7%);
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 0.9rem);
+}
+
+.card h3 {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+    font-size: clamp(1.0rem, 1vw + 1rem, 1.4rem);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card h3:hover {
+    color: hsl(47, 100%, 66%);
+}
+
+.card h3:active {
+    color: hsl(47, 88%, 63%);
+}
+
+.card p.bodyp {
+    color: hsl(0, 0%, 42%);
+}
+
+.card .id {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: clamp(0.4rem, 1vw + 0.5rem, 0.8rem);
+    margin-top: 25px;
+}
+
+.card .greg {
+    width: 30px;
+}
+
+
+
+
+
+@media (max-width: 375px) {
+    .card {
+        width: 250px;
+    }
+
+    .card .illustration {
+        object-fit: cover;
+        height: 170px;
+    }
+}
